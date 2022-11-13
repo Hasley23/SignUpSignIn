@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/ivContentDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <EditText
+        android:id="@+id/tiLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/tiLogin"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/tiPas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/tiPas"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@+id/tiLogin"
+        app:layout_constraintStart_toStartOf="@+id/tiLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tiLogin"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/tiName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/tiName"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/tiPas"
+        app:layout_constraintStart_toStartOf="@+id/tiPas"
+        app:layout_constraintTop_toBottomOf="@+id/tiPas" />
+
+    <EditText
+        android:id="@+id/tiLastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/tiLastname"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/tiName"
+        app:layout_constraintStart_toStartOf="@+id/tiName"
+        app:layout_constraintTop_toBottomOf="@+id/tiName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/tiPatronymic"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/tiLastname"
+        app:layout_constraintStart_toStartOf="@+id/tiLastname"
+        app:layout_constraintTop_toBottomOf="@+id/tiLastname" />
+
+    <Button
+        android:id="@+id/bOk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@android:string/ok"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/tiPas"
+        app:layout_constraintStart_toStartOf="@+id/tiPas"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
