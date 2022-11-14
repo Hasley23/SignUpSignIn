@@ -2,7 +2,9 @@
     <string name="app_name" translatable="false">SignUp SignIn</string>
     <string name="bSignIn" translatable="false">Sign In</string>
     <string name="bSignUp" translatable="false">Sign Up</string>
+    <string name="bAvatar" translatable="false">Avatar</string>
     <string name="tvApp" translatable="false">Simple form</string>
+    <string name="tvActionFormName" translatable="false">User form</string>
     <string name="tiLogin" translatable="false">Login</string>
     <string name="tiPas" translatable="false">Password</string>
     <string name="tiName" translatable="false">Name</string>

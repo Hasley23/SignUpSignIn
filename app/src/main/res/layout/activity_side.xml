@@ -8,10 +8,10 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/avatarImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="@string/ivContentDesc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -23,22 +23,22 @@
         android:id="@+id/tiLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/tiLogin"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        android:autofillHints="" />
+        app:layout_constraintEnd_toEndOf="@+id/avatarImg"
+        app:layout_constraintStart_toStartOf="@+id/avatarImg"
+        app:layout_constraintTop_toBottomOf="@+id/bAvatar" />
 
     <EditText
         android:id="@+id/tiPas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/tiPas"
         android:inputType="textPersonName"
@@ -46,8 +46,7 @@
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="@+id/tiLogin"
         app:layout_constraintStart_toStartOf="@+id/tiLogin"
-        app:layout_constraintTop_toBottomOf="@+id/tiLogin"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/tiLogin" />
 
     <EditText
         android:id="@+id/tiName"
@@ -59,7 +58,7 @@
         android:hint="@string/tiName"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/tiPas"
         app:layout_constraintStart_toStartOf="@+id/tiPas"
         app:layout_constraintTop_toBottomOf="@+id/tiPas" />
@@ -75,13 +74,13 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#757575"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/tiName"
         app:layout_constraintStart_toStartOf="@+id/tiName"
         app:layout_constraintTop_toBottomOf="@+id/tiName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/tiPatron"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -91,7 +90,7 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#757575"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/tiLastname"
         app:layout_constraintStart_toStartOf="@+id/tiLastname"
         app:layout_constraintTop_toBottomOf="@+id/tiLastname" />
@@ -103,7 +102,31 @@
         android:layout_marginTop="24dp"
         android:text="@android:string/ok"
         android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/tiPas"
         app:layout_constraintStart_toStartOf="@+id/tiPas"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/tiPatron"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/bAvatar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/bAvatar"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/tiLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tiLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tvActionFormName" />
+
+    <TextView
+        android:id="@+id/tvActionFormName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tvActionFormName"
+        app:layout_constraintEnd_toEndOf="@+id/avatarImg"
+        app:layout_constraintStart_toStartOf="@+id/avatarImg"
+        app:layout_constraintTop_toBottomOf="@+id/avatarImg" />
 </androidx.constraintlayout.widget.ConstraintLayout>
